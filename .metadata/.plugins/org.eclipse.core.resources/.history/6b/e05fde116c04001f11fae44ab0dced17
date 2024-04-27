@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 
+	mapper가 root태그로 namespace속성을 가진다.
+	namespace속성 : 외부(javacode)mapper을 인식하는 * id값 * 반드시 설정해야함
+-->
+<mapper namespace="student">
+	<!-- 
+		실행할 sql문을 작성 
+		mapper에서 제공하는 태그를 이용
+		<select> : select 문을 작성했을때 사용
+		<insert> : insert 문을 작성했을때 사용
+		<update> : update 문을 작성했을때 사용
+		<delete> : delete 문을 작성했을때 사용
+		* 모든 태그에는 id속성을 반드시 설정 -> sql문을 지정하는 id값 *
+		
+		parameterType :  외부에서 전달받은 데이터에 대한 타입을 설정
+		
+		select문의 결과를 매핑해주는 객체의 Type을 설정할때 사용
+		resultType :
+		resultMap :
+		 
+		
+		
+		
+		 
+	 -->
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+</mapper>
+
+
+
+
+
+

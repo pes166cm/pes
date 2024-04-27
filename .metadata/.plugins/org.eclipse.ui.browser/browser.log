@@ -1,0 +1,35 @@
+
+4월 27, 2024 12:34:45.50 NEW SESSION
+4월 27, 2024 12:34:45.50 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2024 12:41:36.719 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:41:36.719 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:41:36.781 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:41:36.781 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:50:22.415 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:50:22.415 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:50:22.474 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:50:22.474 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:59:45.569 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:59:45.569 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:59:45.623 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 12:59:45.624 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+
+4월 27, 2024 14:54:13.741 NEW SESSION
+4월 27, 2024 14:54:13.741 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 14:54:13.741 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 14:54:13.808 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 14:54:13.808 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 16:14:59.38 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 16:14:59.39 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 16:14:59.113 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 16:14:59.113 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 16:15:24.669 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2024 17:12:50.709 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:12:50.709 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:12:50.777 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:12:50.778 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:13:01.829 Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2024 17:31:34.479 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:31:34.479 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:31:34.543 [0x7FFEF7665B20] ANOMALY: meaningless REX prefix used
+4월 27, 2024 17:31:34.543 [0x7FFEF7663EB0] ANOMALY: meaningless REX prefix used

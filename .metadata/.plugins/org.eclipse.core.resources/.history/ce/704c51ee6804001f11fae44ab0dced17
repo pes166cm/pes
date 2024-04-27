@@ -1,0 +1,18 @@
+package com.mybatis.model.servlce;
+
+import com.mybatis.model.dao.StudentDao;
+
+public class InsertStudentServlet {
+	
+	private StudentDao dao = new StudentDao();
+	
+	public int insertStudent() {
+		
+	}
+	
+	
+	
+	
+	
+	
+}

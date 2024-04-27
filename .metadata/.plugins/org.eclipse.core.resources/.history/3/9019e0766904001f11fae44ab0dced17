@@ -1,0 +1,5 @@
+package com.mybatis.model.dao;
+
+public class StudentDao {
+
+}

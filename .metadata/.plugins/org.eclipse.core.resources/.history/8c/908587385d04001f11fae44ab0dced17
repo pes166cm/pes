@@ -1,0 +1,5 @@
+package com.mybatis.common;
+
+public class SqlSessionTemplate {
+
+}
