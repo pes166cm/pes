@@ -33,12 +33,6 @@ public class InsertStudentServlet extends HttpServlet {
 		
 		response.getWriter().append(result>0?"success":"fail");
 		
-		
-		
-		
-		
-		
-		
 	}
 
 	/**

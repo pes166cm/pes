@@ -35,16 +35,64 @@
 	 		INSERT INTO STUDENT VALUES(SEQ_STUDENT.NEXTVAL,#{name},'01012341234','PHR1234@gmail.com','안양 5동',SYSDATE)
 	 </insert>
 	 
+	 <!--
+	 	 dao에서 두번째 파라미터는 전잘했을 때는 parmegerType="" 설정
+	 	 클래스를 parameterType으로 작성할때는 패키지명.클래스명으로 작성해야함
+	 	 객체가 넘어왔을 때는 값을 가져올때 #{필드명}으로 작성함 
+	 -->
+	 <insert id="insertStudentAll" parameterType="com.mybatis.model.vo.Student"> 
+	 		INSERT INTO STUDENT VALUES(SEQ_STUDENT.NEXTVAL, #{studentName}, #{studentPnum}, #{studentMail}, #{studentAddress}, SYSDATE)
+	 </insert>
 	 
+	 <!-- 
+	 	select문 사용하기
+	 	<select>태그 속성 {
+			 	id : id는 id임 알고있는 그거임 
+			 	parameterType : 외부에서 전달받은 데이터에 대한 타입을 설정 -> 필수값!!
+			 	resultSet의 데이터를 mapping해줄 타입을 선언
+			 	resultType : 매핑할 클래스의 필드명이 컬럼명과 동일할때 사용
+			 	resultMap : 매핑할 클래스의 필드명이 컬럼명과 다를때 사용 -> resultMap태그를 이용해서 매핑용 객체를 선언
+	 	}
+	  -->
+	 <select id="selectStudentCount" resultType="_int">
+	 	SELECT COUNT(*) FROM STUDENT	 
+	 </select>
 	 
+	 <!-- 
+	 	resultMap선언하기
+	 	테이블 컬럼명과 클래스의 필드명이 다를때 매칭시켜주는 태그
+	 	<resultMap>태그 속성{
+	 				id : pk컬럼에 대한 매칭을 할때 사용 column="대소문자구분 안함" property="대소문자구분 함"
+	 				result : 일반컬럼에 대한 매칭을 할때 사용
+	 				collection : has a 관계에 있는 클래스를 매칭할때 사용 -> List타입
+	 				association : has a 관계에 있는 클래스를 매칭할때 사용 -> 일반클래스
+	 	}
+	  -->
+	 <resultMap type="com.mybatis.model.vo.Student" id="studemtMap">
+	 	<id column="student_no" property="studentNO"/>
+	 	<result column="student_name" property="studentName"/>
+	 	<result column="student_tel" property="studentPnum"/>
+	 	<result column="student_email" property="studentMail"/>
+	 	<result column="student_addr" property="studentAddress"/>
+	 	<result column="reg_date" property="enrllDate"/>
+	 	
+	 </resultMap>
 	 
-	 
-	 
+	 <!--resultType="com.mybatis.model.vo.Student"  -->
+	<select id="selectStudentByNo" parameterType="_int" resultMap="studemtMap">
+		
+	 	SELECT * FROM STUDENT WHERE STUDENT_NO=#{NO} 
+	</select>
+
+	<!-- 전체조회하는 sql문 
+		 resultType : 매핑할 클래스의 필드명이 컬럼명과 동일할때 사용
+		 resultMap : 매핑할 클래스의 필드명이 컬럼명과 다를때 사용 -> resultMap태그를 이용해서 매핑용 객체를 선언
+	-->
+	<select id="studentAll" resultMap="studemtMap">
+		SELECT * FROM STUDENT
+	</select>
+
+
+
 
 </mapper>
-
-
-
-
-
-

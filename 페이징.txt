@@ -1,0 +1,34 @@
+페이징처리 변수
+int cPage : 현재 페이지번호를 저장하는 변수
+int numPerpage : 페이지당 출력할 데이터수를 저장하는 변수
+int totalDate : DB에 저장되어 있는 총 row수를 저장하는 변수
+int totalPage : 전체 데이터에 대한 페이지수를 저장하는 변수
+// 페이지바를 구성하는 변수
+int pageNo : 페이지바의 시작번호를 저장하는 변수	
+      계산식 -> ((cPage-1)/pageBarSize)*pageBarSize+1;
+int pageEnd : 페이지바의 끝번호를 저장하는 변수
+      계산식 -> pageNo + pageBarSize-1;
+int pageBarSize : 페이지바에 출력된 번호의 갯수를 저장하는 변수
+
+String pageBar : 페이지 번호별 요청태그를 작성해서 저장하는 변수
+
+1page를 요청했을때 numPerpage=5 
+
+
+row에 순번을 줄때  (데이터에 순서를 주는 방법)
+1. Rownum 컬럼 사용
+2. Rank_over, Rank_Dese_over??
+
+데이터의 시작 : (cPage-1)*numPerpage
+데이터의 끝 : cPage*numPerPage
+
+메이븐 그게 실무에서 자주 사용된다고?
+
+부스트랩 사용하기
+
+
+
+
+
+
+
