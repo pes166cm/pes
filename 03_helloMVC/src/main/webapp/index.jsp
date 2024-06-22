@@ -12,6 +12,10 @@
 			3._1 assign() 뒤로가기 가능 <br> 
 			3._2 replace(문자열로 '주소' 들어감) 뒤로가기 불가능<br> 
 		4. open<br>
+		
+		Servlet에서 date전송 방식<br>
+		1) form input value<br>
+		2) queryString 주소 ? key=value & key=value<br>
 	</h2>
 </section>
 

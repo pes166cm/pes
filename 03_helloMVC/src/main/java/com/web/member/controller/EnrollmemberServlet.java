@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class EnrollmemberServlet
  */
-@WebServlet("/enrollmember.do")
+@WebServlet("/member/enrollmember.do")
 public class EnrollmemberServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -28,6 +28,7 @@ public class EnrollmemberServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//회원가입페이지를 응답해줌
 		RequestDispatcher rd = request.getRequestDispatcher("/views/member/enrollcontainer.jsp");
 		rd.forward(request, response);
 	

@@ -6,13 +6,13 @@
 <jsp:include page="/views/common/header.jsp"/>
 	<section id=enroll-container>
         <h2>회원 가입 정보 입력</h2>
-        <form action="${pageContext.request.contextPath }/enrollmember.do " method="post" >
+        <form action="${pageContext.request.contextPath }/member/enrollend.do" method="post" >
         <table>
 			<tr>
 				<th>아이디</th>
 				<td>
 					<input type="text" placeholder="4글자이상" name="userId" id="userId_" >
-					<input type="button" value="중복확인">
+					<input type="button" id="idduplicatebtn" value="중복확인" >
 				</td>
 			</tr>
 			<tr>
@@ -81,4 +81,14 @@
 		<input type="reset" value="취소">
         </form>
     </section>
+    <script>
+    	const $idbtn = document.getElementById("idduplicatebtn");
+		$idbtn.addEventListener("click", e=>{
+			//open("주소","여는방식 1) _blank, 2)"," width=값, heigth=값");
+			const $userId = document.getElementById("userId_");
+			
+			open("${pageContext.request.contextPath}/member/idduplicate.do?userId="+$userId.value,"_blank","width=300px, heigth=200px");
+		});
+    	
+    </script>
 <jsp:include page="/views/common/footer.jsp"/>

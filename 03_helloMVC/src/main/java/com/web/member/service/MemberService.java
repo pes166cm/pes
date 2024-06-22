@@ -16,5 +16,16 @@ public class MemberService {
 		session.close();
 		return m;
 	}
+	
+	public int insertMember(Member m) {
+		SqlSession session = getSession();
+		int result = dao.insertMember(session, m);
+		if(result > 0) session.commit();
+		else session.rollback();
+		session.close();
+		return result;
+	}
+	
+	
 }
 

@@ -42,7 +42,7 @@
 							<td colspan="2">
 								<input type="checkbox" name="saveId"
 								id="saveId" ${cookie.saveId!=null?"checked":""}><label for="saveId">아이디저장</label>
-								<input type="button" value="회원가입" onclick="location.replace('${path}/enrollmember.do')">
+								<input type="button" value="회원가입" onclick="location.replace('${path}/member/enrollmember.do')">
 							</td>
 						</tr>
 					</table>
@@ -72,10 +72,10 @@
 			<nav>
 				<ul class="main-nav">
 					<li class="home">
-						<a href="">Home</a>
+						<a href="${pageContext.request.contextPath }/index.jsp">Home</a>
 					</li>
 					<li id="board">
-						<a href="">게시판</a>
+						<a href="${pageContext.request.contextPath }/board/boardlist.do">게시판</a>
 					</li>
 				</ul>
 			</nav>

@@ -1,3 +1,8 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<c:set var="path" value="${pageContext.request.contextPath }"/> 
+
+
 객체 web 저장되는 데이터 생명주기 
 
 1. request -> 요청이 들어오고 응답이 끝나면 삭제 (1회용) 가장많이 사용
@@ -7,6 +12,7 @@
 4. Cookie객체 -> session과 비슷함 / 클라이언트가 저장(위탁해서 저장) / <- 저장공간 작음 / 문자열만 저장 가능 / 객체저장 못함 / 유지기간 설정가능 / 저장방식 (key : value) 형식
 
 저장할때는 setAttribute(key, value)  -> 가져올때 getAttribute(key)
+jsp에서 setAttribute의 값을 EL표현식으로 가져올수 있다.
 
 servlet   			jsp
 비지니스로직	 ->	화면응답
@@ -30,9 +36,11 @@ clickEvent
 *** getParameter는 클라이언트가 보낸 값 *** 기억할것
 
 
+saveId에 대한 3항연산
+${cookie.saveId!=null?cookie.saveId.value:'' }
 
-
-
+cookie의 saveId가 null이 아니면(!=) cookie.saveId.value값을 출력하고
+null이면 ' ' 가 출력이 된다.
 
 
 
