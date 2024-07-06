@@ -20,3 +20,11 @@ WHERE rownum BETWEEN 1 AND 5;
 
 
 SELECT COUNT(*) FROM student; 
+
+SELECT * FROM notice;
+
+
+SELECT * FROM BOARD;
+
+
+SELECT * FROM notice;

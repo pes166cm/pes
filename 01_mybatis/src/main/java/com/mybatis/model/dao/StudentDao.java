@@ -55,7 +55,7 @@ public class StudentDao {
 		
 		RowBounds row = new RowBounds((cPage-1)*numPerpage, numPerpage);
 		return session.selectList("student.studentAll", null, row);
-		
+		//return session.selectList("mappernamespace적음", , )
 	}
 	
 	

@@ -5,7 +5,6 @@ import java.io.InputStream;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class SqlSessionTemplate {
@@ -15,7 +14,7 @@ public class SqlSessionTemplate {
 		//1. SqlSessionFactory 클래스에서 제공하는 openSessio()메소드를 이용해서 생성
 		// 1) SqlSessionFactory 클래스는 SqlSessionFactoryBuilder클래스를 이용해서 생성
 		//     SqlSessionFactoryBuilder클래스의 build()메소드를 이용
-		//		bulid()메소드의 인수로 mybatis-config.xml 파일내용을 전달
+		//		build()메소드의 인수로 mybatis-config.xml 파일내용을 전달
 		
 		String fileName="mybatis-config.xml";
 		SqlSession session = null;
@@ -36,11 +35,6 @@ public class SqlSessionTemplate {
 		}
 		
 		return session;
-		
-		
-		
-		
-		
 		
 	}
 	
